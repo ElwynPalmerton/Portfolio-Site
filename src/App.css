@@ -1,0 +1,63 @@
+.navTitle {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #d5e3f5;
+  font-size: 1.5rem;
+}
+
+.navBar {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.blerbFont {
+  font-family: 'Walter Turncoat';
+  font-size:  2rem;
+  color: yellow;
+}
+
+.zybriqsFont {
+  font-family: 'Noto Sans', sans-serif;;
+  font-size:  2rem;
+  color: #d5e3f5;
+  text-shadow: 2px 1px 6px #000000;
+}
+
+.zybriqsTitle {
+  font-family: 'Noto Sans', sans-serif;;
+  color: #B775C6;
+}
+
+.sample {
+  color: #d5e3f5;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.walker {
+  font-family: 'Noto Sans', sans-serif;;
+  font-size:  2rem;
+  color: #7AB8B0  ;
+}
+
+
+.sampleText {
+  color: #d5e3f5;
+}
+
+.description {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #d5e3f5;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.z {
+  color: #9795DE ;
+  font-size:  2rem;
+  font-family: 'Varela Round', sans-serif;
+}
