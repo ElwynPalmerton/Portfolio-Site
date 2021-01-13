@@ -9,7 +9,7 @@ const text = {
   imgUrl: "https://i.ibb.co/QKbPhdr/Screen-Shot-2021-01-04-at-5-47-47-PM.png",
   description: "A random walker animation in p5.js",
   tech: [
-    , "p5.js"
+    "p5.js"
     , "Javascript"
   ],
   features: [

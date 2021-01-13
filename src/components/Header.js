@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    fontFamily: 'IBM Plex Mono',
+    // fontFamily: 'IBM Plex Mono',
     textDecoration: "none",
     color: "#aaaaaa",
   },
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
   },
   title: {
-    marginLeft: "75px",
+    marginLeft: "200px",
     flexGrow: 1,
     textAlign: "center",
     color: "#ffffff",
@@ -69,6 +69,19 @@ export default function Header(props) {
           <Link
             className={classes.link}
             to={{
+              pathname: "/portfolio",
+            }}
+          >
+            <Button
+              className={classes.menuButton}
+            ><h2
+            >Portfolio </h2>
+            </Button>
+          </Link>
+
+          <Link
+            className={classes.link}
+            to={{
               pathname: "/cv",
             }}
           >
@@ -81,10 +94,12 @@ export default function Header(props) {
           <a
             href="https://github.com/ElwynPalmerton"
             style={{
-              color: "#aaaaaa"
+              color: "#aaaaaa",
             }}
           >
             <GitHubIcon
+              style={{ fontSize: "45px" }}
+              fontSize="inherit"
             />
           </a>
 

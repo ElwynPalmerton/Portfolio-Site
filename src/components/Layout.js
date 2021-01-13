@@ -15,6 +15,7 @@ import Blerdeblerb from './Blerdeblerb';
 import Zorbitals from './Zorbitals';
 import Walker from './Walker';
 import AVL from './AVL';
+import LandingPage from './LandingPage';
 import styled from 'styled-components';
 
 
@@ -30,7 +31,7 @@ const Footer = styled.footer`
 
 
 function Layout(props) {
-  console.log(props.word);
+  // console.log(props.word);
   return (
     <div className="page-container">
       {/* <SimpleMediaQuery /> */}
@@ -55,6 +56,9 @@ function Layout(props) {
                 <div>
                   <Switch>
                     <Route exact path="/">
+                      <LandingPage />
+                    </Route>
+                    <Route exact path="/portfolio">
                       <Content />
                     </Route>
                     <Route path="/cv">

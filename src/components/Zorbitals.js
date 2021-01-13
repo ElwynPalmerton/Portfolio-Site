@@ -9,7 +9,7 @@ const text = {
   imgUrl: "https://i.ibb.co/YTbzxf8/Screen-Shot-2020-12-10-at-2-02-42-AM.png",
   description: "zOrbitals is an animation made with p5.js",
   tech: [
-    , "p5.js"
+    "p5.js"
     , "Javascript"
   ],
   features: [

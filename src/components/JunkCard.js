@@ -57,7 +57,7 @@ function JunkCard(props) {
 
   return (
     <Card className={classes.root}>
-      <div>
+      <div className={classes.body}>
         <CardHeader
           style={{ textAlign: "center" }}
           disableTypography="true"
