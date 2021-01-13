@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -10,10 +10,15 @@ import Switch from '@material-ui/core/Switch';
 import { Link } from 'react-router-dom';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Grid from '@material-ui/core/Grid';
+import NavList from './NavList'
+import throttle from 'lodash/throttle';
+import GitIcon from './GitIcon';
+import NavMenu from './NavMenu';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    fontSize: "18px",
     marginBottom: "30px",
     backgroundColor: "#dddddd"
   },
@@ -21,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     // fontFamily: 'IBM Plex Mono',
     textDecoration: "none",
-    color: "#aaaaaa",
+    color: "#d5e3f5",
   },
   link: {
     textDecoration: "none",
@@ -30,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "200px",
     flexGrow: 1,
     textAlign: "center",
-    color: "#ffffff",
+    color: "#d5e3f5",
     textDecoration: "none"
 
   },
@@ -44,7 +49,31 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header(props) {
+
+  const [navStyle, setNavStyle] = useState(true);
+
   const classes = useStyles();
+
+  useEffect(() => {
+
+    const breakpoint = 800;
+
+    setNavStyle(window.innerWidth > breakpoint);
+
+
+    const calcInnerWidth = throttle(function () {
+
+      setNavStyle(window.innerWidth > breakpoint);
+
+      return () => window.removeEventListener('resize', calcInnerWidth)
+
+    }, 200)
+
+
+
+    window.addEventListener('resize', calcInnerWidth);
+  }, [])
+
 
   return (
     <div className={classes.root}>
@@ -64,52 +93,19 @@ export default function Header(props) {
             >
               Elwyn Palmerton
             </h1>
+
           </Link>
-
-          <Link
-            className={classes.link}
-            to={{
-              pathname: "/portfolio",
-            }}
-          >
-            <Button
-              className={classes.menuButton}
-            ><h2
-            >Portfolio </h2>
-            </Button>
-          </Link>
-
-          <Link
-            className={classes.link}
-            to={{
-              pathname: "/cv",
-            }}
-          >
-            <Button
-              className={classes.menuButton}
-            ><h2
-            >CV </h2>
-            </Button>
-          </Link>
-          <a
-            href="https://github.com/ElwynPalmerton"
-            style={{
-              color: "#aaaaaa",
-            }}
-          >
-            <GitHubIcon
-              style={{ fontSize: "45px" }}
-              fontSize="inherit"
-            />
-          </a>
-
-
-
+          {navStyle ? (
+            <React.Fragment>
+              <NavList />
+              <GitIcon />
+            </React.Fragment>
+          ) : (
+              <NavMenu />
+            )
+          }
         </Toolbar>
       </AppBar>
     </div>
   );
 }
-
-// changeDarkMode={changeDarkMode}
-            // darkMode={darkMode}

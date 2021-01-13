@@ -93,6 +93,8 @@ function CV() {
         <li>Designed and built Zybriqs.com - a full-stack javascript project using Node.js, Express, p5.js, and MongoDB. </li>
         <li>Zybriqs includes a responsive UI using Javascript and JQuery. Styled with custom CSS and Bootstrap and a focus on how color and design can make complex apps intuitive and engaging.</li>
         <li>Backend functionality is implemented with Node.js, Express, MongoDB, Mongoose, express-sessions, and EJS templating, allowing users to register, login and save the game state.</li>
+
+        <li>Also familiar with Git, Typescript, ES6, Figma, Sass, Jest, Webpack, Babel, and Python.</li>
       </UL>
 
 

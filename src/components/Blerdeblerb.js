@@ -8,7 +8,7 @@ const text = {
   font: "blerbFont",
   url: "https://serene-waters-68948.herokuapp.com/",
   imgUrl: "https://i.ibb.co/LRcL8Fn/Blerdeblerb-screenshot.png",
-  description: " Blerdeblerb is a no-frills Twitter-clone.",
+  description: " Blerdeblerb is a Twitter-clone.",
   tech: [
     , "React with Redux and React Router"
     , "Node.js and Express"
@@ -26,6 +26,7 @@ const text = {
     "Customize your profile with a user image and bio"
   ]
 }
+
 
 function Blerdeblerb() {
 

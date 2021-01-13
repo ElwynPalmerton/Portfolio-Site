@@ -29,6 +29,12 @@ const useStyles = makeStyles({
     margin: '0 2px',
     transform: 'scale(0.8)',
   },
+  button: {
+    color: "#dddddd",
+    '&:hover': {
+      color: ' #7AB8B0'
+    }
+  },
   title: {
     fontSize: 14,
   },
@@ -57,11 +63,11 @@ function JunkCard(props) {
 
   return (
     <Card className={classes.root}>
-      <div className={classes.body}>
+      <div >
         <CardHeader
           style={{ textAlign: "center" }}
           disableTypography="true"
-          className={fontType}
+          className="walker"
           title={title}
         />
         {/* Card media  */}
@@ -84,7 +90,7 @@ function JunkCard(props) {
             }}
           >
             <Button
-              className={classes.root}
+              className={classes.button}
               size="small">Learn More</Button>
           </Link>
           <a href={link}
@@ -92,7 +98,7 @@ function JunkCard(props) {
           >
             <Button
 
-              className={classes.root}
+              className={classes.button}
               size="small">View site</Button>
           </a>
         </CardActions>

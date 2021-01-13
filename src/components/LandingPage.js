@@ -4,10 +4,19 @@ import profilePic from '../assets/square-profile-photo.jpg';
 import ProfileText from './ProfileText.js'
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+
 
 // https://i.ibb.co/CmHRM4z/Portfolio-Photo.jpg
 
 // const profilePic = "https://i.ibb.co/pXZ2DRz/Square-Profile-Photo.jpg"
+
+const useStyles = makeStyles((theme) => ({
+  pillButton: {
+    // flexGrow: 1,
+    color: "#d5e3f5"
+  },
+}));
 
 const CenterGrid = styled.div`
   @media (max-width: 600px) {
@@ -107,6 +116,7 @@ const Text = styled.div`
 
 
 function LandingPage() {
+  const classes = useStyles();
   return (
     <div>
       <CenterGrid>
@@ -136,8 +146,6 @@ function LandingPage() {
             <ProfileText />
           </Text>
           <Text>
-
-
             <Link
               // className={classes.link}
               to={{
@@ -145,6 +153,7 @@ function LandingPage() {
               }}
             >
               <Button
+                className={classes.pillButton}
                 style={{
                   borderRadius: "50px",
                   width: "150px",
@@ -162,6 +171,7 @@ function LandingPage() {
               }}
             >
               <Button
+                className={classes.pillButton}
                 style={{
                   borderRadius: "50px",
                   width: "50px",
@@ -170,6 +180,8 @@ function LandingPage() {
 
               >CV</Button>
             </Link>
+
+
 
           </Text>
 
