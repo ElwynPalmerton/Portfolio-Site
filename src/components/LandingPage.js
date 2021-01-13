@@ -124,6 +124,7 @@ function LandingPage() {
           <Item1>
 
             <img
+              alt="Picture of Elwyn"
               style={{
                 borderRadius: "300px",
                 border: "2px solid black",

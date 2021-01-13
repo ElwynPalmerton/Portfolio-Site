@@ -1,13 +1,12 @@
 import React from 'react';
 import Header from './NavBar/Header';
-import { Grid, Button, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 // import SimpleMediaQuery from './SimpleMediaQuery.js';
 import Content from './Content';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import CV from './CV';
 import Zybriqs from './Zybriqs';

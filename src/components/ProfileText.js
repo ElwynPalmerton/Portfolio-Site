@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 const text = [
   "Hi! My name is Elwyn and I’ve been a web developer for the past year and half. ",
@@ -13,10 +12,11 @@ export default function ProfileText() {
 
   return (
     <div>
-      {text.map(para => {
-        return (<div>
+      {text.map((para, i) => {
 
-          <p>{para}</p>
+        return (<div key={i}>
+          <p
+          >{para}</p>
         </div>)
       })}
     </div>

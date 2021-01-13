@@ -1,6 +1,5 @@
 import React from 'react';
 import Description from './Description';
-import { Paper } from '@material-ui/core';
 
 
 const text = {
@@ -10,7 +9,7 @@ const text = {
   imgUrl: "https://i.ibb.co/LRcL8Fn/Blerdeblerb-screenshot.png",
   description: " Blerdeblerb is a Twitter-clone.",
   tech: [
-    , "React with Redux and React Router"
+    "React with Redux and React Router"
     , "Node.js and Express"
     , "MongoDB and Mongoose"
     , "Axios for data fetching"

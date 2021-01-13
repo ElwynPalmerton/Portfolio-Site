@@ -9,7 +9,7 @@ const text = {
   imgUrl: "https://i.ibb.co/nb8Rvhk/Screen-Shot-2021-01-04-at-6-17-11-PM.png",
   description: "Automatically generates a balanced binary tree",
   tech: [
-    , "p5.js"
+    "p5.js"
     , "Javascript"
   ],
   features: [

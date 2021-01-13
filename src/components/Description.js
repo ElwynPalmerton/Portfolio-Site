@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import BlerbImage from '../assets/blerdeblerb-screenshot.png';
-import { Link } from 'react-router-dom';
-import Grid from "@material-ui/core/Grid";
-import Animate from 'animate.css-react'
-
-import 'animate.css/animate.css'
-
+import React from 'react';
 
 function Description(props) {
 
 
-  const intro = "animate__backInLeft";
-  const outro = "animate__bounceOut";
-
-  const [currentClassName, setClassName] = useState(intro);
-  const [word, setWord] = useState("Hello");
-
-  const items = ["one", "two", "three"]
   return (
 
     <div>
