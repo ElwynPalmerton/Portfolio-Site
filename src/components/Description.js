@@ -16,10 +16,6 @@ function Description(props) {
   const [currentClassName, setClassName] = useState(intro);
   const [word, setWord] = useState("Hello");
 
-  useEffect(() => {
-    console.log('whatever');
-  });
-
   const items = ["one", "two", "three"]
   return (
 

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavList() {
 
-  const [navStyle, setNavStyle] = useState(true);
+
 
   const classes = useStyles();
 
