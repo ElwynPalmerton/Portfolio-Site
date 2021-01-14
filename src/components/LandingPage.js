@@ -99,6 +99,7 @@ const TitleBox = styled.div`
 const Title = styled.div`
   padding: 15px;
   color: #d5e3f5;
+  font-family: 'Lato', sans-serif;
 `;
 
 

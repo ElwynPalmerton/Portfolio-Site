@@ -2,10 +2,11 @@
   font-family: 'Nanum Gothic', sans-serif;
   color: #d5e3f5;
   font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .navBar {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .blerbFont {
@@ -22,13 +23,13 @@
 }
 
 .zybriqsTitle {
-  font-family: 'Noto Sans', sans-serif;;
+  font-family: 'Lato', sans-serif;
   color: #B775C6;
 }
 
 .sample {
   color: #d5e3f5;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .walker {
