@@ -10,9 +10,13 @@ const useStyles = makeStyles((theme) => ({
     // fontFamily: 'IBM Plex Mono',
     textDecoration: "none",
     color: "#d5e3f5",
+    '&:hover': {
+      color: ' #7AB8B0'
+    }
   },
   link: {
     textDecoration: "none",
+
   },
 }));
 

@@ -5,6 +5,10 @@
   letter-spacing: 1px;
 }
 
+.navTitle:hover {
+  color: #7AB8B0;
+}
+
 .navBar {
   font-family: 'Lato', sans-serif;
 }

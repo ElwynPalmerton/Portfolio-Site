@@ -20,7 +20,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     fontSize: "18px",
     marginBottom: "30px",
-    backgroundColor: "#dddddd"
+    backgroundColor: "#dddddd",
+    '&:hover': {
+      color: ' #7AB8B0'
+    }
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -30,18 +33,21 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
+
   },
   title: {
     marginLeft: "200px",
+    fontSize: "30px",
     flexGrow: 1,
     textAlign: "center",
     color: "#d5e3f5",
-    textDecoration: "none"
+    textDecoration: "none",
+
 
   },
   navbar: {
     backgroundColor: "#1c1c1c",
-    fontFamily: 'Nanum Gothic',
+    fontFamily: 'Nanum Gothic'
   },
   gridElt: {
     width: "90px"
