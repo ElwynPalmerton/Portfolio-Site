@@ -42,8 +42,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "#d5e3f5",
     textDecoration: "none",
-
-
   },
   navbar: {
     backgroundColor: "#1c1c1c",
@@ -75,11 +73,8 @@ export default function Header(props) {
 
     }, 200)
 
-
-
     window.addEventListener('resize', calcInnerWidth);
   }, [])
-
 
   return (
     <div className={classes.root}>
@@ -99,8 +94,8 @@ export default function Header(props) {
             >
               Elwyn Palmerton
             </h1>
-
           </Link>
+
           {navStyle ? (
             <React.Fragment>
               <NavList />

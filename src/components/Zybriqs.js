@@ -5,7 +5,7 @@ import Description from './Description';
 const text = {
   name: "Zybriqs",
   font: "zybriqsTitle",
-  url: "http://www.zybriqs.com/",
+  url: "http://www.zybriqs.com/game",
   imgUrl: "https://i.ibb.co/ZYDyNnC/Screen-Shot-2020-12-04-at-3-26-08-PM.png",
   description: " Zybriqs is an interactive ball and block animation.",
   tech: [

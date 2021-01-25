@@ -5,7 +5,7 @@ const constants = [
     fontType: "zybriqsFont",
     description:
       "Zybriqs is an interactive ball and block animation. Zybriqs was made using P5, Javascript, Express, Express-sessions, and MongoDB. The animation is created in p5.js. It models realistic movement using the physics equations for gravity, wind, and acceleration to model the movement of a ball.",
-    link: "http://www.zybriqs.com/",
+    link: "http://www.zybriqs.com/game",
     imageUrl:
       "https://i.ibb.co/ZYDyNnC/Screen-Shot-2020-12-04-at-3-26-08-PM.png"
   },

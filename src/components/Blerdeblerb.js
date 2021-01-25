@@ -5,7 +5,7 @@ import Description from './Description';
 const text = {
   name: "BLERDEBLERB🗯",
   font: "blerbFont",
-  url: "https://serene-waters-68948.herokuapp.com/",
+  url: "https://www.blerdeblerb.com/",
   imgUrl: "https://i.ibb.co/LRcL8Fn/Blerdeblerb-screenshot.png",
   description: " Blerdeblerb is a Twitter-clone.",
   tech: [
@@ -18,7 +18,7 @@ const text = {
     , "Multer and Sharp for image uploading."
   ],
   features: [
-    "Basic Twitter-like functionality",
+    "Twitter-like functionality",
     "Post blerbs to your feed.",
     "Follow your friends' blerbs",
     "LIKE and REBLERB your friends' blerbs",

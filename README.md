@@ -4,7 +4,8 @@ elwyn.palmerton@gmail.com
 www.elwynwebdev.com
 
 
-This is a portfolio site for Elwyn Palmerton made using React.
+This is a web development portfolio site for Elwyn Palmerton made using React, Material-UI, and styled-components.
+
 
 This site is available at www.elwynwebdev.com
 
