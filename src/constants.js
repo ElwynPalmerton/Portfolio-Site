@@ -15,7 +15,7 @@ const constants = [
     fontType: "blerbFont",
     description:
       "blerdeblerb is a Twitter clone made using React, Express, Node, and MongoDB. blerdeblerb allows users to post blerbs and reblerb or like other users blerbs. blerdeberb also uses router-dom, react redux, axios, and react-image.",
-    link: "https://serene-waters-68948.herokuapp.com/",
+    link: "https://www.blerdeblerb.com/",
     imageUrl:
       "https://i.imgur.com/D6pHmGp.jpg"
   },
