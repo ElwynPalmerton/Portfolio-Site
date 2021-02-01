@@ -18,7 +18,6 @@ import LandingPage from './LandingPage';
 import Starfield from './Starfield';
 import styled from 'styled-components';
 
-
 const Footer = styled.footer`
   text-align: center;
   position: absolute;
@@ -29,7 +28,6 @@ const Footer = styled.footer`
   font-family: 'Nanum Gothic', sans-serif;
   `;
 
-
 function Layout(props) {
   // console.log(props.word);
   return (
@@ -37,60 +35,37 @@ function Layout(props) {
       {/* <SimpleMediaQuery /> */}
       {/* Contains Header */}
       <Router>
-        <Grid container direction="column">
-          <Grid item>
-            <Header changeDarkMode={props.changeDarkMode}
-              darkMode={props.darkMode}
-            />
-          </Grid>
+        <div>
+          <Switch>
+            <Route exact path="/starfield">
+              <Starfield />
+            </Route>
+            <Route exact path="/">
+              <LandingPage />
+            </Route>
+            <Route exact path="/portfolio">
+              <Content />
+            </Route>
+            <Route path="/cv">
+              <CV />
+            </Route>
+            <Route path="/Zybriqs">
+              <Zybriqs />
+            </Route><Route path="/Blerdeblerb">
+              <Blerdeblerb />
+            </Route>
+            <Route path="/zorbitals">
+              <Zorbitals />
+            </Route>
+            <Route path="/walker">
+              <Walker />
+            </Route>
+            <Route path="/avl">
+              <AVL />
+            </Route>
+          </Switch>
+        </div>
 
-          <div className="content-wrap"
-          >
-            {/* Contans stuff  below Headers */}
-            <Grid item container>
-              {/* Gutter  */}
-              <Grid item xs={false} sm={2} />
-              {/* Content(Grid container inside content) */}
-              <Grid item sx={12} sm={8}>
-
-                <div>
-                  <Switch>
-                    <Route exact path="/starfield">
-                      <Starfield />
-                    </Route>
-                    <Route exact path="/">
-                      <LandingPage />
-                    </Route>
-                    <Route exact path="/portfolio">
-                      <Content />
-                    </Route>
-                    <Route path="/cv">
-                      <CV />
-                    </Route>
-                    <Route path="/Zybriqs">
-                      <Zybriqs />
-                    </Route><Route path="/Blerdeblerb">
-                      <Blerdeblerb />
-                    </Route>
-                    <Route path="/zorbitals">
-                      <Zorbitals />
-                    </Route>
-                    <Route path="/walker">
-                      <Walker />
-                    </Route>
-                    <Route path="/avl">
-                      <AVL />
-                    </Route>
-                  </Switch>
-                </div>
-
-
-              </Grid>
-              {/* Gutter  */}
-              <Grid item xs={false} sm={2} />
-            </Grid>
-          </div>
-        </Grid>
       </Router>
 
       <Footer

@@ -5,6 +5,7 @@ import ProfileText from './ProfileText.js'
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import PageWrapper from './PageWrapper';
 
 
 // https://i.ibb.co/CmHRM4z/Portfolio-Photo.jpg
@@ -120,72 +121,75 @@ function LandingPage() {
   const classes = useStyles();
   return (
     <div>
-      <CenterGrid>
-        <LayoutGrid>
-          <Item1>
+      <PageWrapper
+        center={
+          <CenterGrid>
+            <LayoutGrid>
+              <Item1>
 
-            <img
-              alt="Picture of Elwyn"
-              style={{
-                borderRadius: "300px",
-                border: "2px solid black",
-                height: "100%",
-                width: "100%"
-              }}
-              src={profilePic}></img>
+                <img
+                  className="elwyn"
+                  alt="Picture of Elwyn"
+                  style={{
+                    borderRadius: "300px",
+                    border: "2px solid black",
+                    height: "100%",
+                    width: "100%"
+                  }}
+                  src={profilePic}></img>
 
-          </Item1>
-          <Bridge />
-          <Item2>
-            <TitleBox>
-              <Title>
-                <h2>Full-Stack Web Developer</h2>
-                <h4>Located in Los Angeles, CA</h4>
-              </Title>
-            </TitleBox>
-          </Item2>
-          <Text>
-            <ProfileText />
-          </Text>
-          <Text>
-            <Link
-              // className={classes.link}
-              to={{
-                pathname: "/portfolio",
-              }}
-            >
-              <Button
-                className={classes.pillButton}
-                style={{
-                  borderRadius: "50px",
-                  width: "150px",
-                  marginRight: "10px"
-                }}
-                variant="outlined"
+              </Item1>
+              <Bridge />
+              <Item2>
+                <TitleBox>
+                  <Title>
+                    <h2>Full-Stack Web Developer</h2>
+                    <h4>Located in Los Angeles, CA</h4>
+                  </Title>
+                </TitleBox>
+              </Item2>
+              <Text>
+                <ProfileText />
+              </Text>
+              <Text>
+                <Link
+                  // className={classes.link}
+                  to={{
+                    pathname: "/portfolio",
+                  }}
+                >
+                  <Button
+                    className={classes.pillButton}
+                    style={{
+                      borderRadius: "50px",
+                      width: "150px",
+                      marginRight: "10px"
+                    }}
+                    variant="outlined"
 
-              >View Portfolio</Button>
-            </Link>
+                  >View Portfolio</Button>
+                </Link>
 
-            <Link
-              // className={classes.link}
-              to={{
-                pathname: "/cv",
-              }}
-            >
-              <Button
-                className={classes.pillButton}
-                style={{
-                  borderRadius: "50px",
-                  width: "50px",
-                }}
-                variant="outlined"
+                <Link
+                  to={{
+                    pathname: "/cv",
+                  }}
+                >
+                  <Button
+                    className={classes.pillButton}
+                    style={{
+                      borderRadius: "50px",
+                      width: "50px",
+                    }}
+                    variant="outlined"
 
-              >CV</Button>
-            </Link>
-          </Text>
-        </LayoutGrid>
-        <br />
-      </CenterGrid>
+                  >CV</Button>
+                </Link>
+              </Text>
+            </LayoutGrid>
+            <br />
+          </CenterGrid>
+        } />
     </div>
   )
 }

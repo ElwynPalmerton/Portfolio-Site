@@ -24,7 +24,7 @@ export default function sketch(p) {
     }
 
     show() {
-      p.fill(200, 255, 100);
+      p.fill(255, 255, 255);
       var sx = p.map(this.x / this.z, 0, 1, 0, p.width)
       var sy = p.map(this.y / this.z, 0, 1, 0, p.height)
       var r = p.map(this.z, p.width, 0, 1, 12);
@@ -40,11 +40,22 @@ export default function sketch(p) {
 
   let stars = [];
 
+  let pause = false;
+  window.addEventListener('click', () => {
+    pause = !pause;
+    console.log('clicked', pause);
+  });
+
+
   p.setup = function () {
+
+    let canvasHeight = document.documentElement.scrollHeight;
+
     for (let i = 0; i < 300; i++) {
       stars[i] = new Star(i);
     }
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(p.windowWidth, canvasHeight);
+    p.frameRate(30);
   };
 
   p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
@@ -52,16 +63,13 @@ export default function sketch(p) {
     //   rotation = props.rotation * Math.PI / 180;
     // }
 
-    if (props.paused) {
-      p.noLoop()
-    } else {
-      p.loop()
-    }
+    // if (props.paused) {
+
   };
 
   p.draw = function () {
     p.translate(p.width / 2, p.height / 2);
-    p.background(30, 15, 30);
+    p.background(15, 15, 15);
 
     stars.forEach(star => {
       star.update();

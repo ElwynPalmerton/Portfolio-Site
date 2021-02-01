@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from './sketch'
-
+import PageWrapper from './PageWrapper';
+import LandingPage from './LandingPage';
+// import Header from './NavBar/Header';
 
 
 
 function Starfield() {
 
   return (
-    <div style={{
-      position: "absolute"
-    }}>
+    <div>
+
+      <LandingPage />
       <P5Wrapper
-        // paused={paused}
         rotation={50}
         sketch={sketch}
       />
-    </div>)
+    </div>
+
+  )
 }
 
 

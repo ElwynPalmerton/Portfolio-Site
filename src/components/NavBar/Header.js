@@ -18,6 +18,9 @@ import NavMenu from './NavMenu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    opacity: "0.8",
+    position: "relatieve",
+    zIndex: "100",
     fontSize: "18px",
     marginBottom: "30px",
     backgroundColor: "#dddddd",
@@ -55,22 +58,15 @@ const useStyles = makeStyles((theme) => ({
 export default function Header(props) {
 
   const [navStyle, setNavStyle] = useState(true);
-
   const classes = useStyles();
 
   useEffect(() => {
-
     const breakpoint = 800;
-
     setNavStyle(window.innerWidth > breakpoint);
 
-
     const calcInnerWidth = throttle(function () {
-
       setNavStyle(window.innerWidth > breakpoint);
-
       return () => window.removeEventListener('resize', calcInnerWidth)
-
     }, 200)
 
     window.addEventListener('resize', calcInnerWidth);

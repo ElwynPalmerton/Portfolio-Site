@@ -1,6 +1,6 @@
 import React from 'react';
 import Description from './Description';
-
+import PageWrapper from './PageWrapper';
 
 const text = {
   name: "AVL Tree",
@@ -22,9 +22,12 @@ const text = {
 function Blerdeblerb() {
 
   return (
-    <Description
-      text={text}
-    />
+    <PageWrapper
+      center={
+        <Description
+          text={text}
+        />
+      } />
   )
 }
 
