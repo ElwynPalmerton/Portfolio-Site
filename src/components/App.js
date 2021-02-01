@@ -8,6 +8,10 @@ import DarkModeContext from './DarkModeContext';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import '../App.css';
 import { Router } from 'react-router-dom';
+import { ThemeProvider } from "styled-components";
+import theme from "./Theme.js"
+
+
 
 function App() {
 
@@ -19,12 +23,15 @@ function App() {
 
   return (
     <React.StrictMode>
-      <DarkModeContext darkMode={darkState}>
-        <CssBaseline />
-        <Layout changeDarkMode={handleThemeChange}
-          darkMode={darkState}
-        />
-      </DarkModeContext>
+      <ThemeProvider theme={theme}>
+
+        <DarkModeContext darkMode={darkState}>
+          <CssBaseline />
+          <Layout changeDarkMode={handleThemeChange}
+            darkMode={darkState}
+          />
+        </DarkModeContext>
+      </ThemeProvider>
     </React.StrictMode>
 
   );

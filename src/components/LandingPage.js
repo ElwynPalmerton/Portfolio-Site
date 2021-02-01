@@ -58,7 +58,7 @@ const Item1 = styled.div`
 `;
 
 const Bridge = styled.div`
-  border-top: 2px solid black;
+  border-top: ${props => `2px solid ${props.theme.color.stars}`};;
   align-self: end;
   width: 100%;
   height: 50%;
@@ -89,7 +89,7 @@ const Item2 = styled.div`
   `;
 
 const TitleBox = styled.div`
-  border: 2px solid black;
+  border: ${props => `2px solid ${props.theme.color.stars}`};
   color: #d5e3f5;
   grid-row-start: 2; 
   @media (max-width: 600px) {
@@ -99,7 +99,7 @@ const TitleBox = styled.div`
 
 const Title = styled.div`
   padding: 15px;
-  color: #d5e3f5;
+  color: ${props => `${props.theme.color.stars}`};
   font-family: 'Lato', sans-serif;
 `;
 
@@ -107,7 +107,7 @@ const Title = styled.div`
 const Text = styled.div`
    grid-column-start: 1;
    grid-column-end: 5;
-   color: #d5e3f5;
+   color: ${props => `${props.theme.color.stars}`};
    font-size: 1.2rem;
    margin-bottom: 50px;
    @media (max-width: 600px) {
@@ -116,8 +116,7 @@ const Text = styled.div`
 `;
 
 
-
-function LandingPage() {
+function LandingPage(props) {
   const classes = useStyles();
   return (
     <div>
@@ -132,7 +131,7 @@ function LandingPage() {
                   alt="Picture of Elwyn"
                   style={{
                     borderRadius: "300px",
-                    border: "2px solid black",
+                    border: "2px solid #8b648c",
                     height: "100%",
                     width: "100%"
                   }}
