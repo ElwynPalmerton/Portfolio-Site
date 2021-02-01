@@ -196,9 +196,14 @@ function LandingPage(props) {
   )
 }
 
-
-// <h1> Landing Page</h1>
-
 export default LandingPage;
 
 
+//Resize the canvas when window size changes.
+//
+//line-weight for Hero
+//Move github logo down a tad.
+//Header text - like a medium soft warm blue like cornflower?
+//border - lighter soft warm blue
+//
+//Button near the bottom should be the color of the border and somewhat larger.
