@@ -3,7 +3,8 @@ export default function sketch(p) {
 
   class Star {
     constructor(i) {
-      this.color = { h: 40, s: 50, l: 80, a: 1 };
+      //213°, 63%, 98%
+      this.color = { h: 213, s: 63, l: 98, a: 1 };
       this.i = i;
       // this.x = p.random(-p.width / 2, p.width / 2);
       let canvasHeight = document.documentElement.scrollHeight;
@@ -99,7 +100,9 @@ export default function sketch(p) {
 
   p.draw = function () {
 
-    const bg = { h: 48, s: 14, l: 12, a: 1 }
+    // 214°, 29%, 15%
+
+    const bg = { h: 214, s: 29, l: 15, a: 1 }
     // p.translate(p.width / 2, p.height / 2);
     p.background(bg.h, bg.s, bg.l, bg.a);
 

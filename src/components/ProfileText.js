@@ -2,7 +2,7 @@ import React from 'react';
 
 const text = [
   "Hi, my name is Elwyn and I am a web developer.",
-  "Before that I worked as a bookkeeper and accountant. I also have a background in fine art. My drawings, paintings, and sculptures have been exhibited in New York, Oakland, and Los Angeles.",
+  "Before that I worked as a bookkeeper and junior accountant. I also have a background in fine art. My drawings, paintings, and sculptures have been exhibited in New York, Oakland, and Los Angeles.",
 
   "Web development is an exciting field for me. It allows me to bring together my visual and analytical skills. In addition to this I bring years of experience in fast-paced corporate  environments.",
 

@@ -41,7 +41,7 @@ function Layout(props) {
               <Starfield />
             </Route>
             <Route exact path="/">
-              <LandingPage />
+              <Starfield />
             </Route>
             <Route exact path="/portfolio">
               <Content />

@@ -58,7 +58,7 @@ const Item1 = styled.div`
 `;
 
 const Bridge = styled.div`
-  border-top: ${props => `2px solid ${props.theme.color.stars}`};;
+  border-top: ${props => `2px solid ${props.theme.color.border}`};;
   align-self: end;
   width: 100%;
   height: 50%;
@@ -89,7 +89,7 @@ const Item2 = styled.div`
   `;
 
 const TitleBox = styled.div`
-  border: ${props => `2px solid ${props.theme.color.stars}`};
+  border: ${props => `2px solid ${props.theme.color.border}`};
   color: #d5e3f5;
   grid-row-start: 2; 
   @media (max-width: 600px) {
@@ -97,9 +97,10 @@ const TitleBox = styled.div`
   }
 `;
 
+// Full stack web developer  
 const Title = styled.div`
   padding: 15px;
-  color: ${props => `${props.theme.color.stars}`};
+  color: ${props => `${props.theme.color.lightGrey}`};
   font-family: 'Lato', sans-serif;
 `;
 
@@ -107,7 +108,7 @@ const Title = styled.div`
 const Text = styled.div`
    grid-column-start: 1;
    grid-column-end: 5;
-   color: ${props => `${props.theme.color.stars}`};
+   color: ${props => `${props.theme.color.lightGrey}`};
    font-size: 1.2rem;
    margin-bottom: 50px;
    @media (max-width: 600px) {
@@ -125,17 +126,19 @@ function LandingPage(props) {
           <CenterGrid>
             <LayoutGrid>
               <Item1>
+                <imageDiv>
 
-                <img
-                  className="elwyn"
-                  alt="Picture of Elwyn"
-                  style={{
-                    borderRadius: "300px",
-                    border: "2px solid #8b648c",
-                    height: "100%",
-                    width: "100%"
-                  }}
-                  src={profilePic}></img>
+                  <img
+                    className="elwyn"
+                    alt="Elwyn"
+                    style={{
+                      borderRadius: "300px",
+                      border: "2px solid #d5e3f5",
+                      height: "100%",
+                      width: "100%"
+                    }}
+                    src={profilePic}></img>
+                </imageDiv>
 
               </Item1>
               <Bridge />
@@ -174,6 +177,7 @@ function LandingPage(props) {
                     pathname: "/cv",
                   }}
                 >
+
                   <Button
                     className={classes.pillButton}
                     style={{
@@ -181,7 +185,6 @@ function LandingPage(props) {
                       width: "50px",
                     }}
                     variant="outlined"
-
                   >CV</Button>
                 </Link>
               </Text>
