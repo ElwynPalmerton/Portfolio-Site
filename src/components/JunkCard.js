@@ -48,9 +48,6 @@ const useStyles = makeStyles({
     // height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  actions: {
-    color: "#ff0000",
-  }
 });
 
 function JunkCard(props) {

@@ -200,6 +200,9 @@ export default LandingPage;
 
 
 //Resize the canvas when window size changes.
+//Edit the CV page and individual app pages.
+//
+//Better fonts on everything.
 //
 //line-weight for Hero
 //Move github logo down a tad.
@@ -207,3 +210,16 @@ export default LandingPage;
 //border - lighter soft warm blue
 //
 //Button near the bottom should be the color of the border and somewhat larger.
+//
+//Add projects.
+//Add Bounce-Sequencer, Drum Machine, Lamp and Tic-Tac-Toe.
+//
+//Switch Zybriqs and Blerdeblerb.
+//
+//Show Rocket, Saturn, Moon, Fairy.
+//Light transparency on the right side card.
+//
+//Blerdeblerb SVG.
+//Blerdeblerb readme
+
+

@@ -1,3 +1,7 @@
+body {
+  background: black;
+}
+
 .navTitle {
   font-family: 'Nanum Gothic', sans-serif;
   color: #d5e3f5;

@@ -75,8 +75,22 @@ export default function sketch(p) {
     console.log('clicked', pause);
   });
 
+  window.addEventListener('resize', () => {
+    let resetWindow;
+    clearTimeout(resetWindow);
+    resetWindow = setTimeout(() => {
+      let canvasHeight = document.documentElement.scrollHeight;
+      p.createCanvas(p.windowWidth, canvasHeight);
+      stars = [];
+      for (let i = 0; i < 300; i++) {
+        stars[i] = new Star(i);
+      }
+    }, 400);
+  })
+
 
   p.setup = function () {
+
     p.colorMode(p.HSB);
 
     let canvasHeight = document.documentElement.scrollHeight;
@@ -84,9 +98,10 @@ export default function sketch(p) {
     for (let i = 0; i < 500; i++) {
       stars[i] = new Star(i);
     }
+
     p.createCanvas(p.windowWidth, canvasHeight);
     // p.createCanvas(1000, canvasHeight);
-    p.frameRate(30);
+    p.frameRate(60);
   };
 
   p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
