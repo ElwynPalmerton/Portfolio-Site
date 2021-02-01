@@ -11,9 +11,11 @@
     "fbjs": "^3.0.0",
     "fontsource-roboto": "^3.0.3",
     "lodash": "^4.17.20",
+    "p5": "^1.2.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.13.1",
+    "react-p5-wrapper": "^2.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.1"

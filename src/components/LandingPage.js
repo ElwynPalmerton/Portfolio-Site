@@ -182,15 +182,9 @@ function LandingPage() {
 
               >CV</Button>
             </Link>
-
-
-
           </Text>
-
         </LayoutGrid>
         <br />
-
-
       </CenterGrid>
     </div>
   )

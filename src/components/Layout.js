@@ -15,6 +15,7 @@ import Zorbitals from './Zorbitals';
 import Walker from './Walker';
 import AVL from './AVL';
 import LandingPage from './LandingPage';
+import Starfield from './Starfield';
 import styled from 'styled-components';
 
 
@@ -54,6 +55,9 @@ function Layout(props) {
 
                 <div>
                   <Switch>
+                    <Route exact path="/starfield">
+                      <Starfield />
+                    </Route>
                     <Route exact path="/">
                       <LandingPage />
                     </Route>
