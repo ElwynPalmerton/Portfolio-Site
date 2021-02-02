@@ -199,7 +199,8 @@ function LandingPage(props) {
 export default LandingPage;
 
 
-//Resize the canvas when window size changes.
+//Fix the red flash. Try displaying just the canvas or just the components and see what happens - see if I can isolate the effect. (Something to do with React-P5?
+//
 //Edit the CV page and individual app pages.
 //
 //Better fonts on everything.

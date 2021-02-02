@@ -32,7 +32,6 @@ body {
 
 .zybriqsTitle {
   font-family: 'Lato', sans-serif;
-  /* color: #B775C6; */
 }
 
 .sample {
@@ -80,10 +79,10 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: blueviolet;
   z-index: -1;
 }
 
 .elwyn {
   opacity: 0.8;
 }
+

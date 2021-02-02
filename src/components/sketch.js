@@ -1,9 +1,9 @@
 
 export default function sketch(p) {
 
+
   class Star {
     constructor(i) {
-      //213°, 63%, 98%
       this.color = { h: 213, s: 63, l: 98, a: 1 };
       this.i = i;
       // this.x = p.random(-p.width / 2, p.width / 2);
@@ -55,6 +55,7 @@ export default function sketch(p) {
     }
 
     show() {
+      // p.fill(255, 100, 67, 1);
       p.fill(this.color.h, this.color.s, this.color.l, this.color.a);
 
       p.ellipse(this.x, this.y, this.size, this.size);
@@ -75,19 +76,26 @@ export default function sketch(p) {
     console.log('clicked', pause);
   });
 
+  function resetCanvas() {
+    let canvasHeight = document.documentElement.scrollHeight;
+    p.createCanvas(p.windowWidth, canvasHeight);
+    stars = [];
+    for (let i = 0; i < 300; i++) {
+      stars[i] = new Star(i);
+    }
+  }
+
   window.addEventListener('resize', () => {
     let resetWindow;
     clearTimeout(resetWindow);
     resetWindow = setTimeout(() => {
-      let canvasHeight = document.documentElement.scrollHeight;
-      p.createCanvas(p.windowWidth, canvasHeight);
-      stars = [];
-      for (let i = 0; i < 300; i++) {
-        stars[i] = new Star(i);
-      }
+      resetCanvas();
     }, 400);
   })
 
+  window.addEventListener('popstate', () => {
+    resetCanvas();
+  })
 
   p.setup = function () {
 
