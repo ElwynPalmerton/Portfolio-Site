@@ -11,8 +11,7 @@ function Starfield() {
 
   return (
     <div>
-      <h1>hello</h1>
-      {/* <LandingPage /> */}
+      <LandingPage />
       <P5Wrapper
         // rotation={50}
         sketch={sketch}
