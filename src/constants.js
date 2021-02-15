@@ -33,6 +33,16 @@ const constants2 = [
       "https://i.ibb.co/YTbzxf8/Screen-Shot-2020-12-10-at-2-02-42-AM.png"
   },
   {
+    title: "Trampoline",
+    route: "trampoline",
+    fontType: "walker",
+    description:
+      "An animation using p5.js and the toxiclibs - a physics engine for modeling spring and attraction forces.",
+    link: "https://elwynpalmerton.github.io/toxiclibs/",
+    imageUrl:
+      "https://i.ibb.co/mJDYfjh/Screen-Shot-2021-02-15-at-3-05-26-PM.png"
+  },
+  {
     title: "Walker",
     route: "walker",
     fontType: "walker",

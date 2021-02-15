@@ -17,7 +17,7 @@ const text = {
   ]
 }
 
-function Blerdeblerb() {
+function Walker() {
 
   return (
     <PageWrapper
@@ -29,4 +29,4 @@ function Blerdeblerb() {
   )
 }
 
-export default Blerdeblerb;
+export default Walker;

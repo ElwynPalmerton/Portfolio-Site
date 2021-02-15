@@ -15,6 +15,7 @@ import Zorbitals from './Zorbitals';
 import Walker from './Walker';
 import AVL from './AVL';
 import LandingPage from './LandingPage';
+import Trampoline from './Trampoline';
 import Starfield from './Starfield';
 import styled from 'styled-components';
 
@@ -59,6 +60,9 @@ function Layout(props) {
             </Route>
             <Route path="/walker">
               <Walker />
+            </Route>
+            <Route path="/trampoline">
+              <Trampoline />
             </Route>
             <Route path="/avl">
               <AVL />
