@@ -1,23 +1,19 @@
-import React from 'react';
-import Header from './NavBar/Header';
-import { Grid } from '@material-ui/core';
-// import SimpleMediaQuery from './SimpleMediaQuery.js';
-import Content from './Content';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import CV from './CV';
-import Zybriqs from './Zybriqs';
-import Blerdeblerb from './Blerdeblerb';
-import Zorbitals from './Zorbitals';
-import Walker from './Walker';
-import AVL from './AVL';
-import LandingPage from './LandingPage';
-import Trampoline from './Trampoline';
-import Starfield from './Starfield';
-import styled from 'styled-components';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//Components
+// import CV from "./CV";
+// import Zybriqs from "./Zybriqs";
+// import Content from "./Content";
+// import Blerdeblerb from "./Blerdeblerb";
+// import Zorbitals from "./Zorbitals";
+// import Walker from "./Walker";
+// import AVL from "./AVL";
+// import Trampoline from "./Trampoline";
+// import Starfield from "./Starfield";
+import styled from "styled-components";
+
+import ComponentRoutes from "./ComponentRoutes";
 
 const Footer = styled.footer`
   text-align: center;
@@ -26,8 +22,8 @@ const Footer = styled.footer`
   width: 100%;
   height: 2.5rem;
   color: #d5e3f5;
-  font-family: 'Nanum Gothic', sans-serif;
-  `;
+  font-family: "Nanum Gothic", sans-serif;
+`;
 
 function Layout(props) {
   // console.log(props.word);
@@ -37,7 +33,8 @@ function Layout(props) {
       {/* Contains Header */}
       <Router>
         <div>
-          <Switch>
+          <ComponentRoutes />
+          {/* <Switch>
             <Route exact path="/starfield">
               <Starfield />
             </Route>
@@ -52,7 +49,8 @@ function Layout(props) {
             </Route>
             <Route path="/Zybriqs">
               <Zybriqs />
-            </Route><Route path="/Blerdeblerb">
+            </Route>
+            <Route path="/Blerdeblerb">
               <Blerdeblerb />
             </Route>
             <Route path="/zorbitals">
@@ -67,14 +65,13 @@ function Layout(props) {
             <Route path="/avl">
               <AVL />
             </Route>
-          </Switch>
+          </Switch> */}
         </div>
-
       </Router>
 
-      <Footer
-        style={{ textAlign: 'center' }}
-      >Elwyn Palmerton ©{new Date().getFullYear()}</Footer>
+      <Footer style={{ textAlign: "center" }}>
+        Elwyn Palmerton ©{new Date().getFullYear()}
+      </Footer>
     </div>
   );
 }
