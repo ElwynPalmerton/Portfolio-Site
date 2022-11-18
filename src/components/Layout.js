@@ -18,7 +18,7 @@ const Footer = styled.footer`
 function Layout(props) {
   return (
     <div className="page-container">
-      <Router>
+      <Router basename="/#!/index.html">
         <div>
           <ComponentRoutes />
         </div>
