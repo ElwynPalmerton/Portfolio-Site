@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, useRouteMatch, useLocation, Route } from "react-router-dom";
 
 //Components
 import CV from "./CV";
@@ -14,6 +14,11 @@ import Starfield from "./Starfield";
 import styled from "styled-components";
 
 export default function ComponentRoutes() {
+  const match = useRouteMatch();
+  const location = useLocation();
+  console.log("MATCH: ", match);
+  console.log("LOCATION: ", location);
+
   return (
     <Switch>
       <Route exact path="/starfield">
