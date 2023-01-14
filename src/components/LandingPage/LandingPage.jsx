@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import profilePic from "../assets/square-profile-photo.jpg";
-import ProfileText from "./ProfileText.js";
-import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import ProfilePic from "./ProfilePic";
+import ProfileText from "../ProfileText.js";
 import { makeStyles } from "@material-ui/core/styles";
-import PageWrapper from "./PageWrapper";
+import PageWrapper from "../PageWrapper";
+import Buttons from "./Buttons";
 
 // https://i.ibb.co/CmHRM4z/Portfolio-Photo.jpg
 
@@ -120,79 +119,30 @@ function LandingPage(props) {
     <div>
       <PageWrapper
         center={
-          <CenterGrid>
-            <LayoutGrid>
-              <Item1>
-                {/* <TitleBox> */}
-                <imageDiv>
-                  <img
-                    className="elwyn"
-                    alt="Elwyn"
-                    style={{
-                      borderRadius: "300px",
-                      border: "2px solid #d5e3f5",
-                      height: "100%",
-                      width: "100%",
-                    }}
-                    src={profilePic}
-                  ></img>
-                </imageDiv>
-                {/* </TitleBox> */}
-              </Item1>
-              <Bridge />
-              <Item2>
-                <TitleBox>
-                  <Title>
-                    <h2>Full-Stack Web Developer</h2>
-                    <h4>Located in Los Angeles, CA</h4>
-                  </Title>
-                </TitleBox>
-              </Item2>
-            </LayoutGrid>
-            {/* <LayoutGrid> */}
-            <Text>
-              <ProfileText />
-            </Text>
-            <Text>
-              <Link
-                // className={classes.link}
-                to={{
-                  pathname: "/portfolio",
-                }}
-              >
-                <Button
-                  className={classes.pillButton}
-                  style={{
-                    borderRadius: "50px",
-                    width: "150px",
-                    marginRight: "10px",
-                  }}
-                  variant="outlined"
-                >
-                  View Portfolio
-                </Button>
-              </Link>
-
-              <Link
-                to={{
-                  pathname: "/cv",
-                }}
-              >
-                <Button
-                  className={classes.pillButton}
-                  style={{
-                    borderRadius: "50px",
-                    width: "50px",
-                  }}
-                  variant="outlined"
-                >
-                  CV
-                </Button>
-              </Link>
-            </Text>
-            {/* </LayoutGrid> */}
-            <br />
-          </CenterGrid>
+          <>
+            <CenterGrid>
+              <LayoutGrid>
+                <Item1>
+                  <ProfilePic />
+                </Item1>
+                <Bridge />
+                <Item2>
+                  <TitleBox>
+                    <Title>
+                      <h2>Full-Stack Web Developer</h2>
+                      <h4>Located in Los Angeles, CA</h4>
+                    </Title>
+                  </TitleBox>
+                </Item2>
+              </LayoutGrid>
+              {/* <LayoutGrid> */}
+              <Text>
+                <ProfileText />
+              </Text>
+              <br />
+            </CenterGrid>
+            <Buttons />
+          </>
         }
       />
     </div>
