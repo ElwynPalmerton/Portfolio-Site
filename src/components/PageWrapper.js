@@ -1,8 +1,8 @@
-import React from 'react';
-import Header from './NavBar/Header';
-import { Grid } from '@material-ui/core';
+import React from "react";
+import Header from "./NavBar/Header";
+import { Grid } from "@material-ui/core";
 // import SimpleMediaQuery from './SimpleMediaQuery.js';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Footer = styled.footer`
   text-align: center;
@@ -11,9 +11,8 @@ const Footer = styled.footer`
   width: 100%;
   height: 2.5rem;
   color: #d5e3f5;
-  font-family: 'Nanum Gothic', sans-serif;
-  `;
-
+  font-family: "Nanum Gothic", sans-serif;
+`;
 
 function PageWrapper(props) {
   // console.log(props.word);
@@ -24,23 +23,20 @@ function PageWrapper(props) {
 
       <Grid container direction="column">
         <Grid item>
-          <Header changeDarkMode={props.changeDarkMode}
+          <Header
+            changeDarkMode={props.changeDarkMode}
             darkMode={props.darkMode}
           />
         </Grid>
 
-        <div className="content-wrap"
-        >
+        <div className="content-wrap">
           {/* Contans stuff  below Headers */}
           <Grid item container>
             {/* Gutter  */}
             <Grid item xs={false} sm={2} />
             {/* Content(Grid container inside content) */}
             <Grid item xs={12} sm={8}>
-              <div>
-                {props.center}
-
-              </div>
+              <div>{props.children}</div>
             </Grid>
             {/* Gutter  */}
             <Grid item xs={false} sm={2} />

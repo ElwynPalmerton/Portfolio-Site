@@ -6,10 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import PageWrapper from "../PageWrapper";
 import Buttons from "./Buttons";
 
-// https://i.ibb.co/CmHRM4z/Portfolio-Photo.jpg
-
-// const profilePic = "https://i.ibb.co/pXZ2DRz/Square-Profile-Photo.jpg"
-
 const useStyles = makeStyles((theme) => ({
   pillButton: {
     // flexGrow: 1,
@@ -116,36 +112,31 @@ const Text = styled.div`
 function LandingPage(props) {
   const classes = useStyles();
   return (
-    <div>
-      <PageWrapper
-        center={
-          <>
-            <CenterGrid>
-              <LayoutGrid>
-                <Item1>
-                  <ProfilePic />
-                </Item1>
-                <Bridge />
-                <Item2>
-                  <TitleBox>
-                    <Title>
-                      <h2>Full-Stack Web Developer</h2>
-                      <h4>Located in Los Angeles, CA</h4>
-                    </Title>
-                  </TitleBox>
-                </Item2>
-              </LayoutGrid>
-              {/* <LayoutGrid> */}
-              <Text>
-                <ProfileText />
-              </Text>
-              <br />
-            </CenterGrid>
-            <Buttons />
-          </>
-        }
-      />
-    </div>
+    <>
+      <PageWrapper>
+        <CenterGrid>
+          <LayoutGrid>
+            <Item1>
+              <ProfilePic />
+            </Item1>
+            <Bridge />
+            <Item2>
+              <TitleBox>
+                <Title>
+                  <h2>Full-Stack Web Developer</h2>
+                  <h4>Located in Los Angeles, CA</h4>
+                </Title>
+              </TitleBox>
+            </Item2>
+          </LayoutGrid>
+          <Text>
+            <ProfileText />
+          </Text>
+          <br />
+        </CenterGrid>
+        <Buttons />
+      </PageWrapper>
+    </>
   );
 }
 
