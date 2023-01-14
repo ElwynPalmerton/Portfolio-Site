@@ -31,7 +31,7 @@ const LayoutGrid = styled.div`
   align-items: center;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
   @media (max-width: 950px) {
@@ -123,6 +123,7 @@ function LandingPage(props) {
           <CenterGrid>
             <LayoutGrid>
               <Item1>
+                {/* <TitleBox> */}
                 <imageDiv>
                   <img
                     className="elwyn"
@@ -136,6 +137,7 @@ function LandingPage(props) {
                     src={profilePic}
                   ></img>
                 </imageDiv>
+                {/* </TitleBox> */}
               </Item1>
               <Bridge />
               <Item2>
@@ -146,47 +148,49 @@ function LandingPage(props) {
                   </Title>
                 </TitleBox>
               </Item2>
-              <Text>
-                <ProfileText />
-              </Text>
-              <Text>
-                <Link
-                  // className={classes.link}
-                  to={{
-                    pathname: "/portfolio",
-                  }}
-                >
-                  <Button
-                    className={classes.pillButton}
-                    style={{
-                      borderRadius: "50px",
-                      width: "150px",
-                      marginRight: "10px",
-                    }}
-                    variant="outlined"
-                  >
-                    View Portfolio
-                  </Button>
-                </Link>
-
-                <Link
-                  to={{
-                    pathname: "/cv",
-                  }}
-                >
-                  <Button
-                    className={classes.pillButton}
-                    style={{
-                      borderRadius: "50px",
-                      width: "50px",
-                    }}
-                    variant="outlined"
-                  >
-                    CV
-                  </Button>
-                </Link>
-              </Text>
             </LayoutGrid>
+            {/* <LayoutGrid> */}
+            <Text>
+              <ProfileText />
+            </Text>
+            <Text>
+              <Link
+                // className={classes.link}
+                to={{
+                  pathname: "/portfolio",
+                }}
+              >
+                <Button
+                  className={classes.pillButton}
+                  style={{
+                    borderRadius: "50px",
+                    width: "150px",
+                    marginRight: "10px",
+                  }}
+                  variant="outlined"
+                >
+                  View Portfolio
+                </Button>
+              </Link>
+
+              <Link
+                to={{
+                  pathname: "/cv",
+                }}
+              >
+                <Button
+                  className={classes.pillButton}
+                  style={{
+                    borderRadius: "50px",
+                    width: "50px",
+                  }}
+                  variant="outlined"
+                >
+                  CV
+                </Button>
+              </Link>
+            </Text>
+            {/* </LayoutGrid> */}
             <br />
           </CenterGrid>
         }
