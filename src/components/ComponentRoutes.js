@@ -11,6 +11,7 @@ import Walker from "./Walker";
 import AVL from "./AVL";
 import Trampoline from "./Trampoline";
 import Starfield from "./Starfield";
+import ClosestPair from "./ClosestPair";
 import styled from "styled-components";
 
 export default function ComponentRoutes() {
@@ -50,6 +51,9 @@ export default function ComponentRoutes() {
       </Route>
       <Route path="/avl">
         <AVL />
+      </Route>
+      <Route path="/closestpair">
+        <ClosestPair /> 
       </Route>
     </Switch>
   );

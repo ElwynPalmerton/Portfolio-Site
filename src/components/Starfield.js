@@ -9,10 +9,10 @@ function Starfield() {
   return (
     <div>
       <LandingPage />
-      {/* <P5Wrapper
+      <P5Wrapper
         // rotation={50}
         sketch={sketch}
-      /> */}
+      />
     </div>
   );
 }

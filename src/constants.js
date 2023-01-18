@@ -1,5 +1,14 @@
 const constants = [
   {
+    title: "blerdeblurb",
+    route: "blerdeblerb",
+    fontType: "blerbFont",
+    description:
+      "blerdeblerb is a Twitter clone made using React, Express, Node, and MongoDB. blerdeblerb allows users to post blerbs and reblerb or like other users blerbs. blerdeberb also uses router-dom, react redux, axios, and react-image.",
+    link: "https://blerdeblurb.com/#!/index.html/signup",
+    imageUrl: "https://i.imgur.com/D6pHmGp.jpg",
+  },
+  {
     title: "Zybriqs",
     route: "zybriqs",
     fontType: "zybriqsFont",
@@ -8,15 +17,6 @@ const constants = [
     link: "http://www.zybriqs.com",
     imageUrl:
       "https://i.ibb.co/ZYDyNnC/Screen-Shot-2020-12-04-at-3-26-08-PM.png",
-  },
-  {
-    title: "blerdeblurb",
-    route: "blerdeblerb",
-    fontType: "blerbFont",
-    description:
-      "blerdeblerb is a Twitter clone made using React, Express, Node, and MongoDB. blerdeblerb allows users to post blerbs and reblerb or like other users blerbs. blerdeberb also uses router-dom, react redux, axios, and react-image.",
-    link: "https://www.blerdeblurb.com/",
-    imageUrl: "https://i.imgur.com/D6pHmGp.jpg",
   },
 ];
 
@@ -62,6 +62,15 @@ const constants3 = [
     link: "https://elwynpalmerton.github.io/AVL-Tree/",
     imageUrl:
       "https://i.ibb.co/nb8Rvhk/Screen-Shot-2021-01-04-at-6-17-11-PM.png",
+  },
+  {
+    title: "Closest Pair",
+    route: "closestpair",
+    fontType: "zybriqsFont",
+    description:
+      "Generates a graph with random points and finds the closest pair.",
+    link: "https://elwynpalmerton.github.io/ClosestPair/",
+    imageUrl: "https://i.ibb.co/Np13Mw5/Closest-Pair.png",
   },
 ];
 

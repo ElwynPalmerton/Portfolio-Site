@@ -5,7 +5,7 @@ import PageWrapper from "./PageWrapper";
 const text = {
   name: "BLERDEBLURB🗯",
   font: "blerbFont",
-  url: "https://www.blerdeblurb.com/",
+  url: "https://blerdeblurb.com/#!/index.html/signup",
   imgUrl: "https://i.ibb.co/LRcL8Fn/Blerdeblerb-screenshot.png",
   description: " Blerdeblerb is a Twitter-clone.",
   tech: [
@@ -27,7 +27,11 @@ const text = {
 };
 
 function Blerdeblerb() {
-  return <PageWrapper center={<Description text={text} />} />;
+  return (
+    <PageWrapper>
+      <Description text={text} />
+    </PageWrapper>
+  );
 }
 
 export default Blerdeblerb;

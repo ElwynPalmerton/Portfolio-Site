@@ -3,6 +3,7 @@ import Header from "./NavBar/Header";
 import { Grid } from "@material-ui/core";
 // import SimpleMediaQuery from './SimpleMediaQuery.js';
 import styled from "styled-components";
+import { HelpOutline } from "@material-ui/icons";
 
 const Footer = styled.footer`
   text-align: center;
@@ -15,7 +16,7 @@ const Footer = styled.footer`
 `;
 
 function PageWrapper(props) {
-  // console.log(props.word);
+  console.log(props);
   return (
     <div className="page-container">
       {/* <SimpleMediaQuery /> */}

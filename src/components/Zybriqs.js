@@ -30,7 +30,13 @@ const text = {
 };
 
 function Zybriqs() {
-  return <PageWrapper center={<Description text={text} />} />;
+  return (
+    <>
+      <PageWrapper>
+        <Description text={text} />
+      </PageWrapper>
+    </>
+  );
 }
 
 export default Zybriqs;

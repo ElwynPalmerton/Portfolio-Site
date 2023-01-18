@@ -87,8 +87,8 @@ function CV() {
         </P>
         <UL>
           <li>
-            Developed the frontend architecture for a United Airlines bag
-            tracking app POC using Typescript, Redux, and Material-UI.{" "}
+            Developed the frontend architecture for a bag tracking POC app for a
+            major airline.{" "}
           </li>
           <li>
             Designed a user interface for managing employee bag handling
