@@ -2,6 +2,10 @@ body {
   background: black;
 }
 
+.profile {
+  font-family: 'Space Mono',
+}
+
 .navTitle {
   font-family: 'Space Mono', monospace;
   /* font-family: 'Nanum Gothic', sans-serif; */
@@ -54,6 +58,7 @@ body {
 
 .sampleText {
   color: #d5e3f5;
+  font-family: 'Space Mono', monospace;
 }
 
 .description {
@@ -90,9 +95,5 @@ canvas {
 
 .elwyn {
   opacity: 0.8;
-}
-
-.profile {
-  font-family: 'Space Mono',
 }
 

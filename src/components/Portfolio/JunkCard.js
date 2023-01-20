@@ -30,6 +30,7 @@ const useStyles = makeStyles({
     transform: "scale(0.8)",
   },
   button: {
+    fontFamily: "Space Mono",
     color: "#dddddd",
     "&:hover": {
       color: " #7AB8B0",
