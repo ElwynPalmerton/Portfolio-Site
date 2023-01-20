@@ -1,13 +1,14 @@
 import React from "react";
 import Description from "./Description";
 import PageWrapper from "../PageWrapper";
+import { Grid } from "@material-ui/core";
+
 import RouterIcon from "../../assets/react-router.256x140.png";
 import NodeIcon from "../../assets/nodejs.png";
 import Express from "../../assets/express.png";
 import s3 from "../../assets/s3.png";
 import eb from "../../assets/eb.png";
 import codepipeline from "../../assets/codepipeline.png";
-import { Grid } from "@material-ui/core";
 
 const text = {
   name: "BLERDEBLURB🗯",

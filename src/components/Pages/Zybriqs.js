@@ -1,6 +1,13 @@
 import React from "react";
 import Description from "./Description";
 import PageWrapper from "../PageWrapper";
+import { Grid } from "@material-ui/core";
+
+import NodeIcon from "../../assets/nodejs.png";
+import Express from "../../assets/express.png";
+import eb from "../../assets/eb.png";
+import p5 from "../../assets/p5.png";
+import codepipeline from "../../assets/codepipeline.png";
 
 const text = {
   name: "Zybriqs",
@@ -35,6 +42,29 @@ function Zybriqs() {
     <>
       <PageWrapper>
         <Description text={text} />
+        <br />
+        <br />
+        <br />
+        <Grid container direction="row" justify="center" spacing={4}>
+          <Grid style={{ marginRight: "1rem", background: "white" }} item>
+            <img style={{ height: "80px" }} src={NodeIcon} />
+          </Grid>
+          <Grid style={{ background: "white" }} item>
+            <img style={{ height: "80px" }} src={Express} />
+          </Grid>
+        </Grid>
+        <br />
+        <Grid container direction="row" justify="center" spacing={4}>
+          <Grid item>
+            <img style={{ height: "100px" }} src={p5} />
+          </Grid>
+          <Grid item>
+            <img style={{ height: "100px" }} src={eb} />
+          </Grid>
+          <Grid item>
+            <img style={{ height: "100px" }} src={codepipeline} />
+          </Grid>
+        </Grid>
       </PageWrapper>
     </>
   );
