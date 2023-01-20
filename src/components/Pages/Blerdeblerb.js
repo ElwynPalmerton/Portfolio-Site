@@ -1,6 +1,13 @@
 import React from "react";
 import Description from "./Description";
 import PageWrapper from "../PageWrapper";
+import RouterIcon from "../../assets/react-router.256x140.png";
+import NodeIcon from "../../assets/nodejs.png";
+import Express from "../../assets/express.png";
+import s3 from "../../assets/s3.png";
+import eb from "../../assets/eb.png";
+import codepipeline from "../../assets/codepipeline.png";
+import { Grid } from "@material-ui/core";
 
 const text = {
   name: "BLERDEBLURB🗯",
@@ -33,6 +40,30 @@ function Blerdeblerb() {
   return (
     <PageWrapper>
       <Description text={text} />
+      <br />
+      <br />
+      <br />
+      <Grid container direction="row" justify="center" spacing={8}>
+        <Grid style={{ background: "white" }} item>
+          <img style={{ height: "80px" }} src={NodeIcon} />
+        </Grid>
+        <Grid item>
+          <img style={{ height: "80px" }} src={RouterIcon} />
+        </Grid>
+
+        <Grid style={{ background: "white" }} item>
+          <img style={{ height: "80px" }} src={Express} />
+        </Grid>
+        <Grid item>
+          <img style={{ height: "80px" }} src={s3} />
+        </Grid>
+        <Grid item>
+          <img style={{ height: "80px" }} src={eb} />
+        </Grid>
+        <Grid item>
+          <img style={{ height: "80px" }} src={codepipeline} />
+        </Grid>
+      </Grid>
     </PageWrapper>
   );
 }

@@ -6,9 +6,7 @@ function Description(props) {
       <a href={props.text.url} style={{ textDecoration: "none" }}>
         <h1 className={props.text.font}>{props.text.name}</h1>
       </a>
-
       <h3 style={{ fontFamily: "Space Mono" }}>{props.text.description}</h3>
-
       <img
         style={{
           width: "400px",
@@ -24,7 +22,6 @@ function Description(props) {
           return <li key={i}>{item}</li>;
         })}
       </ul>
-
       <h2 className="sample">Features: </h2>
       <ul className="sampleText">
         {props.text.features.map((item, i) => {
