@@ -7,6 +7,7 @@ import PageWrapper from "../PageWrapper";
 import Buttons from "./Buttons";
 import IconSection from "./IconSection";
 import { Divider, Grid } from "@material-ui/core";
+import TechSection from "./TechSection";
 
 const useStyles = makeStyles((theme) => ({
   pillButton: {
@@ -136,6 +137,9 @@ function LandingPage(props) {
           <Text>
             <ProfileText />
           </Text>
+          <TechSection />
+          <br />
+          <br />
           <br />
           <br />
           <IconSection /> 
