@@ -3,7 +3,8 @@ body {
 }
 
 .navTitle {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'Nanum Gothic', sans-serif; */
   color: #d5e3f5;
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -14,7 +15,8 @@ body {
 }
 
 .navBar {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'Lato', sans-serif; */
 }
 
 .blerbFont {
@@ -37,11 +39,13 @@ body {
 
 .sample {
   color: #d5e3f5;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'Lato', sans-serif; */
 }
 
 .walker {
-  font-family: 'Noto Sans', sans-serif;;
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'Noto Sans', sans-serif;; */
   font-size:  2rem;
   color: #7AB8B0;
   text-shadow: 1px 1px 3px #000000;
@@ -53,6 +57,7 @@ body {
 }
 
 .description {
+  /* font-family: 'Space Mono', monospace; */
   font-family: 'Nanum Gothic', sans-serif;
   color: #d5e3f5;
 }
@@ -85,5 +90,9 @@ canvas {
 
 .elwyn {
   opacity: 0.8;
+}
+
+.profile {
+  font-family: 'Space Mono',
 }
 

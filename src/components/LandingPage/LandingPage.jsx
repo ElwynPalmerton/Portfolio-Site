@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import ProfilePic from "./ProfilePic";
-import ProfileText from "../ProfileText.js";
+import ProfileText from "./ProfileText.js";
 import { makeStyles } from "@material-ui/core/styles";
 import PageWrapper from "../PageWrapper";
 import Buttons from "./Buttons";
+import IconSection from "./IconSection";
+import { Divider, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   pillButton: {
@@ -95,7 +97,8 @@ const TitleBox = styled.div`
 const Title = styled.div`
   padding: 15px;
   color: ${(props) => `${props.theme.color.lightGrey}`};
-  font-family: "Lato", sans-serif;
+  font-family: "Space Mono";
+  // font-family: "Lato", sans-serif;
 `;
 
 const Text = styled.div`
@@ -129,12 +132,18 @@ function LandingPage(props) {
               </TitleBox>
             </Item2>
           </LayoutGrid>
+          <br />
           <Text>
             <ProfileText />
           </Text>
           <br />
+          <br />
+          <IconSection /> 
+          <Grid container justify="center">
+            <Buttons />
+          </Grid>
         </CenterGrid>
-        <Buttons />
+        <br />
       </PageWrapper>
     </>
   );

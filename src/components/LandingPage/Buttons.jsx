@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   pillButton: {
     // flexGrow: 1,
     color: "#d5e3f5",
+    fontFamily: "Space Mono",
   },
 }));
 
@@ -41,7 +42,7 @@ export default function Buttons() {
           }}
           variant="outlined"
         >
-          View Portfolio
+          Portfolio
         </Button>
       </Link>
 

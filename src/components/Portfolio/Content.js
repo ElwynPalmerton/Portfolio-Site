@@ -1,8 +1,8 @@
 import React from "react";
-import JunkCard from "../components/JunkCard";
+import JunkCard from "./JunkCard";
 import { Grid } from "@material-ui/core";
-import constants, { constants2, constants3 } from "../constants.js";
-import PageWrapper from "./PageWrapper";
+import constants, { constants2, constants3 } from "../../constants.js";
+import PageWrapper from "../PageWrapper";
 
 function Content(props) {
   return (

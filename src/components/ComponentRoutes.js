@@ -2,16 +2,16 @@ import React from "react";
 import { Switch, useRouteMatch, useLocation, Route } from "react-router-dom";
 
 //Components
-import CV from "./CV";
-import Zybriqs from "./Zybriqs";
-import Content from "./Content";
-import Blerdeblerb from "./Blerdeblerb";
-import Zorbitals from "./Zorbitals";
-import Walker from "./Walker";
-import AVL from "./AVL";
-import Trampoline from "./Trampoline";
+import CV from "./CV/CV";
+import Zybriqs from "./Pages/Zybriqs";
+import Content from "./Portfolio/Content";
+import Blerdeblerb from "./Pages/Blerdeblerb";
+import Zorbitals from "./Pages/Zorbitals";
+import Walker from "./Pages/Walker";
+import AVL from "./Pages/AVL";
+import Trampoline from "./Pages/Trampoline";
 import Starfield from "./Starfield";
-import ClosestPair from "./ClosestPair";
+import ClosestPair from "./Pages/ClosestPair";
 import styled from "styled-components";
 
 export default function ComponentRoutes() {

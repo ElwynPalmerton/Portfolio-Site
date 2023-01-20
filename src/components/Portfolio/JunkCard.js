@@ -73,7 +73,10 @@ function JunkCard(props) {
           className={classes.media}
           image={imageUrl}
         />
-        <CardContent> {description} </CardContent>
+        <CardContent style={{ fontFamily: "Space Mono" }}>
+          {" "}
+          {description}{" "}
+        </CardContent>
       </div>
       <div>
         <CardActions>

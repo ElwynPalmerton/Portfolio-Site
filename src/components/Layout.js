@@ -12,7 +12,7 @@ const Footer = styled.footer`
   width: 100%;
   height: 2.5rem;
   color: #d5e3f5;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Space Mono", sans-serif;
 `;
 
 function Layout(props) {

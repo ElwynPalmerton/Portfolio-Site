@@ -46,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
   },
   navbar: {
     backgroundColor: "#1c1c1c",
-    fontFamily: "Nanum Gothic",
+    // fontFamily: "Nanum Gothic",
+    fontFamily: "Space Mono",
   },
   gridElt: {
     width: "90px",

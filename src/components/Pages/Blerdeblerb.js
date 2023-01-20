@@ -1,6 +1,6 @@
 import React from "react";
 import Description from "./Description";
-import PageWrapper from "./PageWrapper";
+import PageWrapper from "../PageWrapper";
 
 const text = {
   name: "BLERDEBLURB🗯",
