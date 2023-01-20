@@ -16,6 +16,9 @@ const text = {
     "Material-UI",
     "JSON web tokens",
     "Multer and Sharp for image uploading.",
+    "Node.js backend deployed on AWS with Elastic Beanstalk, Route 53, and ACM.",
+    "React frontend deployed on S3.",
+    "CI/CD with CodeCommit, CodePipeline, and CodeBuild.",
   ],
   features: [
     "Twitter-like functionality",

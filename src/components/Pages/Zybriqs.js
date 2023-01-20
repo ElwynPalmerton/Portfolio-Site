@@ -16,8 +16,9 @@ const text = {
     "Passport.js",
     "MongoDB and Mongoose",
     "EJS",
-    ,
     "BootStrap",
+    "Deployed on AWS with Elastic Beanstalk.",
+    "CI/CD with CodeCommit, CodePipeline, and CodeBuild.",
   ],
   features: [
     "A unique interactive animation which models gravity, wind, acceleration, and drag.",

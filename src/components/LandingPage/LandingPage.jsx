@@ -126,8 +126,8 @@ function LandingPage(props) {
             <Item2>
               <TitleBox>
                 <Title>
-                  <h2>Full-Stack Web Developer</h2>
-                  <h4>Located in Los Angeles, CA</h4>
+                  <h2> 🚀 Full-Stack Web Developer</h2>
+                  <h4>🧑‍🚀 Located in Los Angeles, CA</h4>
                 </Title>
               </TitleBox>
             </Item2>
